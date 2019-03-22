@@ -1,9 +1,9 @@
 #!/bin/bash
 
-grpc_1_15_1_githash=1a60e6971f428323245a930031ad267bb3142ba4
+grpc_1_15_1_githash=090c147a40932a8fb8c37028c12331ef839fb7df
 
 function build_grpc () {
-  git clone https://github.com/grpc/grpc.git google/grpc
+  git clone https://github.com/interiorem/grpc.git google/grpc
   cd google/grpc
   git checkout ${grpc_1_15_1_githash} 
   git submodule update --init
